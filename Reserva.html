@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelogo - Mi Reserva</title>
+  <link rel="stylesheet" href="Reser.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <i class="fas fa-bars menu-icon"></i>
+    <img src="Imagenes/Logo.png" alt="Travelogo" class="logo">
+  </header>
+
+  <!-- Título principal -->
+  <h1 class="title">Mi Reserva</h1>
+
+  <!-- Botones principales -->
+  <section class="options">
+    <div class="option"><i class="fas fa-map-marker-alt"></i><p>Destino</p></div>
+    <div class="option"><i class="fas fa-users"></i><p>Pasajeros</p></div>
+    <div class="option"><i class="fas fa-receipt"></i><p>Orden</p></div>
+    <div class="option"><i class="fas fa-check-square"></i><p>Estado</p></div>
+  </section>
+
+  <!-- Información de reserva -->
+  <section class="reservation-card">
+    <h3>Reserva:</h3>
+    <div class="row"><i class="fas fa-check-square"></i><span>Estado</span></div>
+    <div class="row"><i class="fas fa-dollar-sign"></i><span>Total</span></div>
+    <div class="row"><i class="fas fa-calendar-alt"></i><span>Fecha</span></div>
+    <div class="row"><i class="fas fa-plane"></i><span>Aerolínea</span></div>
+
+    <div class="status-bar">
+      <p>¡Estás al día!</p>
+      <span>Reserva confirmada</span>
+    </div>
+  </section>
+
+  <!-- Información del cliente -->
+  <section class="client-card">
+    <h3>Cliente: <em>Kevin García Calle</em></h3>
+    <div class="client-info">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Usuario">
+      <div class="icons">
+        <i class="fas fa-id-card"></i>
+        <i class="fas fa-suitcase-rolling"></i>
+        <i class="fas fa-map-marker-alt"></i>
+        <i class="fas fa-envelope"></i>
+      </div>
+    </div>
+  </section>
+  <nav class="categories">
+    <a href="Proxim.html">Proximo destino</a>
+    <a href="index.html">Menu</a>
+    <a href="Reserva.html">Reserva</a>
+  </nav>
+  <form class="form-reserva">
+    <h2>Formulario de Reserva</h2>
+    <input type="text" placeholder="Nombre completo" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <select>
+      <option>Amazonas</option>
+      <option>Cartagena</option>
+      <option>San Andres</option>
+    </select>
+    <input type="date" required>
+    <button type="submit">Confirmar reserva</button>
+  </form>
+
+  <button class="modo-oscuro" id="toggleMode">🌙 Modo oscuro</button>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* ---- Reset general ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body.home {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px 0 60px; 
+}
+
+/* ---- Barra superior ---- */
+.top-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+}
+
+/* ---- Logo ---- */
+.logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ---- Frase principal ---- */
+.tagline {
+  margin: 15px 0;
+  background-color: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  width: 80%;
+}
+
+/* ---- Barra de búsqueda ---- */
+.search-bar {
+  position: relative;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  outline: none;
+}
+
+/* ---- Categorías ---- */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #555;
+}
+
+/* ---- Tarjetas de paquetes ---- */
+.packages {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.package {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.package {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 40px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.package img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  object-fit: cover;
+}
+
+.package .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.package .info p {
+  font-size: 14px;
+  color: #333;
+}
+
+.package i {
+  font-size: 20px;
+  color: #333;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 480px) {
+  .logo {
+    height: 50px;
+  }
+
+  .package img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .package .info p {
+    font-size: 13px;
+  }
+
+  .bottom-bar i {
+    font-size: 18px;
+  }
+}
